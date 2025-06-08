@@ -12,7 +12,14 @@ export const getCharacters = async (page = 1, name = '', status = '', species = 
         species
       }
     });
-    return response.data;
+    
+    return {
+      results: response.data.results,
+      info: {
+        count: response.data.info.count,
+        pages: response.data.info.pages
+      }
+    };
   } catch (error) {
     if (error.response && error.response.status === 404) {
       return {

@@ -15,6 +15,13 @@
   align-items: center;
 }
 
+.app {
+  padding: 20px;
+  min-height: 100vh;
+  background: #1E1F29;
+  color: white;
+}
+
 .content-container {
   width: 95%;
   max-width: 1800px;
@@ -202,32 +209,94 @@ td {
 .pagination {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  gap: 1.5rem;
   margin: 2rem 0;
+  padding: 1rem;
 }
 
-.pagination button {
-  padding: 1.5rem 3rem;
-  border-radius: 12px;
+.pagination-button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
   background-color: rgba(67, 217, 173, 0.1);
-  color: #213547;
+  color: #43D9AD;
   border: 2px solid rgba(67, 217, 173, 0.2);
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 1px;
 }
 
-.pagination button:hover:not(:disabled) {
+.pagination-button:hover:not(:disabled) {
   background-color: rgba(67, 217, 173, 0.2);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(67, 217, 173, 0.2);
 }
 
-.pagination button:disabled {
+.pagination-button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.pagination-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #43D9AD;
+  font-size: 1rem;
+}
+
+.results-info {
+  margin-left: 1rem;
+  color: rgba(67, 217, 173, 0.8);
+  font-size: 0.9rem;
+}
+
+.page-input {
+  width: 60px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid rgba(67, 217, 173, 0.2);
+  background-color: rgba(30, 31, 41, 0.95);
+  color: #43D9AD;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.page-input:focus {
+  outline: none;
+  border-color: #43D9AD;
+  box-shadow: 0 0 10px rgba(67, 217, 173, 0.3);
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .pagination-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .page-input {
+    width: 50px;
+    padding: 0.4rem;
+  }
+
+  .pagination-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .results-info {
+    width: 100%;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
 }
 
 /* Responsive layout */
@@ -620,13 +689,6 @@ td:nth-child(4) {
 @font-face {
   font-family: 'Get Schwifty';
   src: url('/fonts/get_schwifty.ttf') format('truetype');
-}
-
-.app {
-  padding: 20px;
-  min-height: 100vh;
-  background: #1E1F29;
-  color: white;
 }
 
 .app-title {
