@@ -1,3 +1,24 @@
+# Rick and Morty Characters Project
+
+Bu proje Massive Frontend değerlendirmesi için hazırlanmıştır.
+
+## Canlı Uygulama Linki
+
+👉 [Uygulamayı Görüntüle](https://rick-morty-characters-psi.vercel.app)
+
+## Github Repository Linki
+
+👉 [Kaynak Kod (Github)](https://github.com/suheylaikbalcime/rick-morty-characters)
+
+## Özellikler
+
+- Filtreleme (İsim, Tür, Durum)
+- Sıralama (A-Z, Z-A)
+- Sayfalama ve Sayfa Boyutu Seçimi
+- Modal ile Karakter Detayı Görüntüleme
+- Hata Yönetimi ve Yüklenme Animasyonu
+- Responsive Tasarım
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
